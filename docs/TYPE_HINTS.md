@@ -99,7 +99,7 @@ class Usuario:
    ```python
    def calcular_promedio(notas: List[float]) -> float:
        return sum(notas) / len(notas)
-   
+
    # El IDE/linter advertirá sobre este error:
    calcular_promedio(["no", "son", "números"])  # ❌ Error de tipo
    ```

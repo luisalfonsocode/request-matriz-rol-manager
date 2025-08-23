@@ -4,6 +4,7 @@ import subprocess
 import sys
 from pathlib import Path
 
+
 def main():
     """Ejecuta todas las operaciones de mantenimiento."""
     # Obtener la ruta del proyecto
@@ -39,6 +40,7 @@ def main():
     except subprocess.CalledProcessError as e:
         print(f"\n❌ Error en la operación: {e}")
         return 1
+
 
 if __name__ == "__main__":
     sys.exit(main())

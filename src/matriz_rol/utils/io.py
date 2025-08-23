@@ -1,9 +1,10 @@
 """Utilidades para la matriz de roles."""
 
-import os
 import json
-from typing import Dict, List, Optional, Union
+import os
 from pathlib import Path
+from typing import Dict, List, Optional, Union
+
 
 def cargar_matriz_desde_json(ruta: Union[str, Path]) -> Dict[str, List[str]]:
     """Carga una matriz de roles desde un archivo JSON.
@@ -21,14 +22,13 @@ def cargar_matriz_desde_json(ruta: Union[str, Path]) -> Dict[str, List[str]]:
     ruta = Path(ruta)
     if not ruta.exists():
         raise FileNotFoundError(f"No se encontró el archivo: {ruta}")
-        
-    with open(ruta, 'r', encoding='utf-8') as f:
+
+    with open(ruta, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def guardar_matriz_en_json(
-    matriz: Dict[str, List[str]],
-    ruta: Union[str, Path]
+    matriz: Dict[str, List[str]], ruta: Union[str, Path]
 ) -> None:
     """Guarda una matriz de roles en un archivo JSON.
 
@@ -41,8 +41,8 @@ def guardar_matriz_en_json(
     """
     ruta = Path(ruta)
     ruta.parent.mkdir(parents=True, exist_ok=True)
-    
-    with open(ruta, 'w', encoding='utf-8') as f:
+
+    with open(ruta, "w", encoding="utf-8") as f:
         json.dump(matriz, f, indent=4)
 
 
@@ -63,22 +63,22 @@ def validar_matriz(matriz: Dict[str, List[str]]) -> bool:
     """
     if not matriz:
         return False
-        
+
     for rol, permisos in matriz.items():
         # Validar tipos
         if not isinstance(rol, str) or not isinstance(permisos, list):
             return False
-        
+
         # Validar permisos
         if not permisos:  # No permitir roles sin permisos
             return False
-            
+
         # Validar que todos los permisos sean strings
         if not all(isinstance(p, str) for p in permisos):
             return False
-            
+
         # Validar duplicados
         if len(permisos) != len(set(permisos)):
             return False
-            
+
     return True

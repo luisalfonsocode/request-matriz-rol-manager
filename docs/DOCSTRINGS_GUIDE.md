@@ -40,7 +40,7 @@ Proporciona funcionalidades para:
 ```python
 class GestorRoles:
     """Clase que gestiona roles y permisos en el sistema.
-    
+
     Esta clase proporciona métodos para crear roles,
     asignar permisos y verificar accesos.
 

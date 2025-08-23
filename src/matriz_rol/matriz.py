@@ -7,13 +7,13 @@ El módulo incluye clases y funciones para:
     - Verificar consistencia de permisos
 """
 
-from typing import Dict, List, Optional, Union
 from datetime import datetime
+from typing import Dict, List, Optional, Union
 
 
 class MatrizRoles:
     """Clase para gestionar y procesar matrices de roles.
-    
+
     Esta clase proporciona funcionalidades para crear, validar y
     manipular matrices de roles, asegurando la consistencia de
     los datos y las relaciones entre roles y permisos.
@@ -38,10 +38,7 @@ class MatrizRoles:
         self.ultima_modificacion: datetime = datetime.now()
 
     def agregar_rol(
-        self,
-        nombre: str,
-        permisos: List[str],
-        rol_padre: Optional[str] = None
+        self, nombre: str, permisos: List[str], rol_padre: Optional[str] = None
     ) -> bool:
         """Agrega un nuevo rol a la matriz.
 
@@ -77,7 +74,7 @@ class MatrizRoles:
         self.roles[nombre] = permisos
         if rol_padre:
             self.jerarquia[nombre] = self.roles[rol_padre]
-        
+
         self.ultima_modificacion = datetime.now()
         return True
 

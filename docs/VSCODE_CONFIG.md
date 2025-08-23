@@ -29,13 +29,13 @@ El archivo `.vscode/settings.json` contiene la siguiente configuración:
 {
     // Configuración de Python
     "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
-    
+
     // Configuración de autoDocstring
     "autoDocstring.docstringFormat": "google",
     "autoDocstring.startOnNewLine": true,
     "autoDocstring.includeDescription": true,
     "autoDocstring.generateDocstringOnEnter": true,
-    
+
     // Formateo automático
     "editor.formatOnSave": true,
     "python.formatting.provider": "black",
@@ -43,31 +43,31 @@ El archivo `.vscode/settings.json` contiene la siguiente configuración:
         "--line-length",
         "88"
     ],
-    
+
     // Linting
     "python.linting.enabled": true,
     "python.linting.pylintEnabled": true,
     "python.linting.pylintArgs": [
         "--max-line-length=88"
     ],
-    
+
     // Ruff (linter rápido)
     "ruff.enable": true,
     "ruff.format.args": [
         "--line-length=88"
     ],
-    
+
     // Auto-organización de importaciones
     "editor.codeActionsOnSave": {
         "source.organizeImports": true
     },
-    
+
     // Configuración de verificación de tipos
     "python.analysis.typeCheckingMode": "strict",
     "python.analysis.diagnosticMode": "workspace",
     "python.analysis.inlayHints.functionReturnTypes": true,
     "python.analysis.inlayHints.variableTypes": true,
-    
+
     // Resaltado de errores en tiempo real
     "editor.guides.bracketPairs": true,
     "editor.guides.indentation": true

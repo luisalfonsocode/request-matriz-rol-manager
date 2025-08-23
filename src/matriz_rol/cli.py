@@ -3,6 +3,7 @@ Script CLI para la gestión de matrices de roles.
 """
 
 import click
+
 from matriz_rol import MatrizRoles
 from matriz_rol.utils.io import cargar_matriz_desde_json, guardar_matriz_en_json
 
@@ -14,7 +15,7 @@ def cli():
 
 
 @cli.command()
-@click.argument('archivo', type=click.Path(exists=True))
+@click.argument("archivo", type=click.Path(exists=True))
 def validar(archivo):
     """Valida una matriz de roles desde un archivo JSON."""
     try:
@@ -27,8 +28,8 @@ def validar(archivo):
 
 
 @cli.command()
-@click.argument('archivo_origen', type=click.Path(exists=True))
-@click.argument('archivo_destino', type=click.Path())
+@click.argument("archivo_origen", type=click.Path(exists=True))
+@click.argument("archivo_destino", type=click.Path())
 def convertir(archivo_origen, archivo_destino):
     """Convierte una matriz de roles entre formatos."""
     try:
@@ -40,25 +41,31 @@ def convertir(archivo_origen, archivo_destino):
 
 
 @cli.command()
-@click.argument('archivo', type=click.Path())
+@click.argument("archivo", type=click.Path())
 def crear(archivo):
     """Crea una nueva matriz de roles interactivamente."""
     matriz = {}
-    
+
     while True:
-        rol = click.prompt("Nombre del rol (o enter para terminar)", default='', show_default=False)
+        rol = click.prompt(
+            "Nombre del rol (o enter para terminar)", default="", show_default=False
+        )
         if not rol:
             break
-            
+
         permisos = []
         while True:
-            permiso = click.prompt("Agregar permiso (o enter para terminar)", default='', show_default=False)
+            permiso = click.prompt(
+                "Agregar permiso (o enter para terminar)",
+                default="",
+                show_default=False,
+            )
             if not permiso:
                 break
             permisos.append(permiso)
-            
+
         matriz[rol] = permisos
-        
+
     try:
         guardar_matriz_en_json(matriz, archivo)
         click.echo(f"✅ Matriz creada y guardada en {archivo}")

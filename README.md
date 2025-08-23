@@ -31,8 +31,9 @@ pip install -r requirements/test.txt  # Para testing
    - Pylance
    - autoDocstring
 
-2. Configurar VS Code:
-   - Ver `docs/VSCODE_CONFIG.md` para la configuración detallada
+2. Configurar el entorno:
+   - Ver [Configuración de VS Code](docs/VSCODE_CONFIG.md) para la configuración del editor
+   - Ver [Herramientas de Desarrollo](docs/DEVELOPMENT_TOOLS.md) para detalles de las herramientas
    - Aplicar la configuración recomendada del workspace
 
 ## Uso
@@ -65,16 +66,33 @@ utilitarios-matriz-de-rol/
 └── scripts/              # Scripts de utilidad
 ```
 
-### Guías de Estilo
-- [PEP 8](docs/PEP8_GUIDE.md)
-- [Type Hints](docs/TYPE_HINTS.md)
-- [Docstrings](docs/DOCSTRINGS_GUIDE.md)
+### Documentación
+
+- [Guía de Estilo PEP 8](docs/PEP8_GUIDE.md)
+- [Guía de Type Hints](docs/TYPE_HINTS.md)
+- [Guía de Docstrings](docs/DOCSTRINGS_GUIDE.md)
+- [Herramientas de Desarrollo](docs/DEVELOPMENT_TOOLS.md)
 
 ### Testing
 ```bash
 pytest              # Ejecutar tests
 pytest --cov=src    # Tests con cobertura
 ```
+
+### Control de Calidad
+
+Usar pre-commit para verificaciones automáticas:
+```bash
+pre-commit install    # Instalar hooks
+pre-commit run -a     # Verificar todos los archivos
+```
+
+Ver [Herramientas de Desarrollo](docs/DEVELOPMENT_TOOLS.md) para más detalles sobre:
+- Formateo de código (black, isort)
+- Linting (flake8, pylint, ruff)
+- Verificación de tipos (mypy)
+- Testing (pytest)
+- Documentación (sphinx, mkdocs)
 
 ## Contribuir
 
