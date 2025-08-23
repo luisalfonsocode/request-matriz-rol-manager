@@ -1,0 +1,13 @@
+matrices_rol:
+  - nombre: "Matriz Básica"
+    id: "BASIC"
+    descripcion: "Matriz de roles básicos del sistema"
+  - nombre: "Matriz Avanzada"
+    id: "ADVANCED"
+    descripcion: "Matriz de roles con permisos avanzados"
+  - nombre: "Matriz Administración"
+    id: "ADMIN"
+    descripcion: "Matriz de roles administrativos"
+  - nombre: "Matriz Desarrollo"
+    id: "DEV"
+    descripcion: "Matriz de roles para desarrolladores"
