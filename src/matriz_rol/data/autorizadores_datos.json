@@ -1,0 +1,30 @@
+{
+  "APF2": {
+    "autorizador": "Daniela Fernanda Ortiz",
+    "correo": "daniela.ortiz@empresa.com"
+  },
+  "QASD": {
+    "autorizador": "Sebastián Eduardo Martín",
+    "correo": "sebastian.martin@corporacion.co"
+  },
+  "SSSS": {
+    "autorizador": "Ricardo Antonio Jiménez",
+    "correo": "ricardo.jimenez@global.org"
+  },
+  "CASD": {
+    "autorizador": "Isabella Camila Rojas",
+    "correo": "isabella.rojas@tech.net"
+  },
+  "FCVE": {
+    "autorizador": "Paola Carolina Díaz",
+    "correo": "paola.diaz@solutions.com"
+  },
+  "ATLA": {
+    "autorizador": "Laura Cristina Torres",
+    "correo": "laura.torres@innovate.co"
+  },
+  "FIEC": {
+    "autorizador": "Fernando Gabriel Ruiz",
+    "correo": "fernando.ruiz@business.org"
+  }
+}

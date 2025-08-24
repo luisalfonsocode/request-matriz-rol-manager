@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "ultima_actualizacion": "2025-08-23T19:56:39.514787",
+    "total_aplicaciones": 7
+  },
+  "autorizadores": {
+    "APF2": {
+      "codigo": "APF2",
+      "nombre_aplicacion": "Sistema APF2",
+      "autorizador": "Daniela Fernanda Ortiz",
+      "correo": "daniela.ortiz@empresa.com",
+      "telefono": "+57 300 123 4567",
+      "area": "Tecnología",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514743"
+    },
+    "QASD": {
+      "codigo": "QASD",
+      "nombre_aplicacion": "Sistema QASD",
+      "autorizador": "Sebastián Eduardo Martín",
+      "correo": "sebastian.martin@corporacion.co",
+      "telefono": "+57 301 234 5678",
+      "area": "Calidad",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514768"
+    },
+    "SSSS": {
+      "codigo": "SSSS",
+      "nombre_aplicacion": "Sistema SSSS",
+      "autorizador": "Ricardo Antonio Jiménez",
+      "correo": "ricardo.jimenez@global.org",
+      "telefono": "+57 302 345 6789",
+      "area": "Seguridad",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514772"
+    },
+    "CASD": {
+      "codigo": "CASD",
+      "nombre_aplicacion": "Sistema CASD",
+      "autorizador": "Isabella Camila Rojas",
+      "correo": "isabella.rojas@tech.net",
+      "telefono": "+57 303 456 7890",
+      "area": "Desarrollo",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514775"
+    },
+    "FCVE": {
+      "codigo": "FCVE",
+      "nombre_aplicacion": "Sistema FCVE",
+      "autorizador": "Paola Carolina Díaz",
+      "correo": "paola.diaz@solutions.com",
+      "telefono": "+57 304 567 8901",
+      "area": "Finanzas",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514778"
+    },
+    "ATLA": {
+      "codigo": "ATLA",
+      "nombre_aplicacion": "Sistema ATLA",
+      "autorizador": "Laura Cristina Torres",
+      "correo": "laura.torres@innovate.co",
+      "telefono": "+57 305 678 9012",
+      "area": "Operaciones",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514780"
+    },
+    "FIEC": {
+      "codigo": "FIEC",
+      "nombre_aplicacion": "Sistema FIEC",
+      "autorizador": "Fernando Gabriel Ruiz",
+      "correo": "fernando.ruiz@business.org",
+      "telefono": "+57 306 789 0123",
+      "area": "Estrategia",
+      "activo": true,
+      "fecha_actualizacion": "2025-08-23T19:56:39.514783"
+    }
+  }
+}

@@ -1,35 +1,13 @@
 # Dependencias base del proyecto (core dependencies)
 
-# === Validación y Procesamiento de Datos ===
-# pydantic: Validación de datos usando type annotations
-pydantic>=2.0.0
-
-# pandas: Análisis y manipulación de datos
-pandas>=2.0.0
-
-# numpy: Computación numérica y arrays multidimensionales
-numpy>=1.24.0
-
-# === Utilidades de Tipo y Validación ===
-# typing-extensions: Extensiones para tipado en Python
-typing-extensions>=4.0.0
-
-# dataclasses: Decorador para crear clases de datos automáticamente
-dataclasses>=0.8
-
 # === Serialización y Formato de Datos ===
-# PyYAML: Parser y emisor de YAML
+# PyYAML: Parser y emisor de YAML para archivos de configuración
 PyYAML>=6.0.0
 
-# python-dotenv: Manejo de variables de entorno
-python-dotenv>=1.0.0
+# === GUI Moderna ===
+# customtkinter: Framework moderno para interfaces gráficas
+customtkinter>=5.2.0
 
 # === Utilidades de Sistema ===
 # click: Creación de interfaces de línea de comandos
 click>=8.0.0
-
-# tqdm: Barras de progreso para bucles
-tqdm>=4.65.0
-
-# loguru: Logging mejorado y más simple
-loguru>=0.7.0

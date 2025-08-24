@@ -14,6 +14,7 @@ Ejemplo:
     >>> main()
 """
 
+import re
 import subprocess
 import tkinter as tk
 from pathlib import Path
@@ -39,17 +40,27 @@ class SolicitudMatrizFrame(CTkFrame):
         btn_confirmar (CTkButton): Botón de confirmación
     """
 
-    def __init__(self, master=None):
+    # Grupos predefinidos que siempre deben estar disponibles
+    GRUPOS_PREDEFINIDOS = ["APF2_QASD1_SSSS_CASD1_", "FCVE2_ATLA_FIEC_CASD1_"]
+
+    def __init__(self, master=None, callback_autorizadores=None):
         """Inicializa el frame de solicitud.
 
         Args:
             master: Widget padre (ventana principal)
+            callback_autorizadores: Función callback para cuando se guardan autorizadores
         """
         super().__init__(master)
+        self.callback_autorizadores = callback_autorizadores
         self.matrices_seleccionadas = []
         self.grupos_red = []
+
+        # Callback para cuando se confirma la selección
+        self.callback_confirmacion = None
+
         self.setup_ui()
         self.cargar_matrices()
+        self.precargar_grupos_temporales()
 
     def setup_ui(self):
         """Configura los elementos de la interfaz."""
@@ -133,6 +144,29 @@ class SolicitudMatrizFrame(CTkFrame):
 
         return grupos_validos, grupos_invalidos
 
+    def extraer_codigos_aplicacion(self, grupos_red: List[str]) -> List[str]:
+        """Extrae códigos de aplicación de los grupos de red.
+
+        Busca patrones de 4 dígitos alfanuméricos en los nombres de grupos.
+
+        Args:
+            grupos_red: Lista de nombres de grupos de red
+
+        Returns:
+            Lista de códigos de aplicación únicos encontrados
+        """
+        codigos = []
+        patron = re.compile(r"[A-Z0-9]{4}")  # 4 caracteres alfanuméricos
+
+        for grupo in grupos_red:
+            # Encontrar todos los patrones de 4 caracteres alfanuméricos
+            matches = patron.findall(grupo.upper())
+            for match in matches:
+                if match not in codigos:
+                    codigos.append(match)
+
+        return codigos
+
     def confirmar_seleccion(self):
         """Valida y confirma la selección de matrices y grupos."""
         # Validar que haya matrices seleccionadas
@@ -155,20 +189,48 @@ class SolicitudMatrizFrame(CTkFrame):
             )
             return
 
-        # Mostrar resumen
-        resumen = "RESUMEN DE SOLICITUD\n\n"
-        resumen += "Matrices seleccionadas:\n"
-        for matriz_id in self.matrices_seleccionadas:
-            resumen += f"- {matriz_id}\n"
+        # Extraer códigos de aplicación
+        codigos_aplicacion = self.extraer_codigos_aplicacion(self.grupos_red)
 
-        resumen += "\nGrupos de red:\n"
-        for grupo in self.grupos_red:
-            resumen += f"- {grupo}\n"
+        if not codigos_aplicacion:
+            messagebox.showwarning(
+                "Advertencia",
+                "No se encontraron códigos de aplicación válidos en los grupos.\n"
+                "Los códigos deben ser de 4 caracteres alfanuméricos.",
+            )
+            return
 
-        continuar = messagebox.askyesno("Confirmar", f"{resumen}\n¿Desea continuar?")
+        # Abrir ventana de autorizadores
+        self.abrir_ventana_autorizadores(codigos_aplicacion)
 
-        if continuar:
-            self.validar_grupos()
+    def abrir_ventana_autorizadores(self, codigos_aplicacion: List[str]):
+        """Abre una nueva ventana para gestionar autorizadores."""
+        ventana_autorizadores = tk.Toplevel(self.master)
+        ventana_autorizadores.title("Gestión de Autorizadores")
+        ventana_autorizadores.geometry("800x600")
+
+        # Crear el frame de autorizadores
+        from .autorizadores_editor import AutorizadoresEditorFrame
+
+        editor_frame = AutorizadoresEditorFrame(
+            ventana_autorizadores,
+            codigos_aplicacion=codigos_aplicacion,
+            grupos_red=self.grupos_red,
+        )
+
+        # ⭐ ASIGNAR EL CALLBACK PARA CREAR SOLICITUDES ⭐
+        if self.callback_autorizadores:
+            print(
+                "🔗 DEBUG MATRIZ: Asignando callback al editor desde solicitud_matriz"
+            )
+            editor_frame.callback_guardado = self.callback_autorizadores
+            print(
+                f"🔗 DEBUG MATRIZ: Callback asignado: {editor_frame.callback_guardado is not None}"
+            )
+        else:
+            print("⚠️ DEBUG MATRIZ: callback_autorizadores no está definido!")
+
+        editor_frame.pack(expand=True, fill="both", padx=10, pady=10)
 
     def validar_grupos(self):
         """Valida los grupos de red y muestra resultados."""
@@ -199,6 +261,20 @@ class SolicitudMatrizFrame(CTkFrame):
         """Procesa la solicitud final."""
         # Aquí iría la lógica para procesar la solicitud
         messagebox.showinfo("Éxito", "Solicitud procesada correctamente")
+
+    def precargar_grupos_temporales(self):
+        """Precarga grupos de red temporales predefinidos."""
+        # Insertar los grupos en el campo de texto
+        grupos_texto = "\n".join(self.GRUPOS_PREDEFINIDOS)
+        self.txt_grupos.delete("1.0", "end")
+        self.txt_grupos.insert("1.0", grupos_texto)
+
+        # Mostrar mensaje informativo
+        messagebox.showinfo(
+            "Grupos Temporales",
+            "Se han precargado grupos temporales para pruebas.\n"
+            "Puede agregar, modificar o eliminar según sea necesario.",
+        )
 
 
 def main():

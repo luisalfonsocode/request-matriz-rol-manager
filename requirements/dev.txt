@@ -10,9 +10,6 @@ black>=23.0.0
 # isort: Ordenamiento automático de imports
 isort>=5.0.0
 
-# autopep8: Formateador según PEP 8
-autopep8>=2.0.0
-
 # === Análisis Estático y Linting ===
 # mypy: Verificador estático de tipos
 mypy>=1.0.0
@@ -20,41 +17,6 @@ mypy>=1.0.0
 # pylint: Análisis estático de código
 pylint>=2.17.0
 
-# ruff: Linter ultra rápido
-ruff>=0.1.0
-
-# flake8: Verificador de estilo de código
-flake8>=6.0.0
-
-# bandit: Análisis de seguridad
-bandit>=1.7.0
-
 # === Control de Calidad ===
 # pre-commit: Hooks de git pre-commit
 pre-commit>=3.0.0
-
-# safety: Comprobación de dependencias con vulnerabilidades
-safety>=2.3.0
-
-# === Documentación ===
-# sphinx: Generador de documentación
-sphinx>=7.0.0
-
-# sphinx-rtd-theme: Tema Read the Docs para Sphinx
-sphinx-rtd-theme>=1.2.0
-
-# mkdocs: Generador de documentación alternativo
-mkdocs>=1.4.0
-
-# mkdocs-material: Tema Material para MkDocs
-mkdocs-material>=9.1.0
-
-# === Herramientas de Desarrollo ===
-# ipython: Shell interactiva mejorada
-ipython>=8.0.0
-
-# jupyter: Notebooks para desarrollo y documentación
-jupyter>=1.0.0
-
-# rich: Formateo rico para terminal
-rich>=13.0.0

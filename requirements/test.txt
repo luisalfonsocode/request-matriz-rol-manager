@@ -13,39 +13,3 @@ pytest-cov>=4.0.0
 
 # pytest-mock: Creación de mocks para tests
 pytest-mock>=3.10.0
-
-# pytest-asyncio: Testing de código asíncrono
-pytest-asyncio>=0.21.0
-
-# pytest-bdd: Testing behavior-driven development
-pytest-bdd>=6.1.0
-
-# pytest-benchmark: Benchmarking de código
-pytest-benchmark>=4.0.0
-
-# === Herramientas de Testing ===
-# faker: Generación de datos de prueba
-Faker>=18.0.0
-
-# hypothesis: Testing basado en propiedades
-hypothesis>=6.75.0
-
-# coverage: Medición detallada de cobertura
-coverage>=7.2.0
-
-# === Testing de API y Web ===
-# requests: Cliente HTTP para testing
-requests>=2.31.0
-
-# requests-mock: Mock de respuestas HTTP
-requests-mock>=1.11.0
-
-# webtest: Testing de aplicaciones WSGI
-WebTest>=3.0.0
-
-# === Testing de Base de Datos ===
-# pytest-postgresql: Testing con PostgreSQL
-pytest-postgresql>=4.1.1
-
-# pytest-mongodb: Testing con MongoDB
-pytest-mongodb>=2.2.0

@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "ultima_actualizacion": "2025-08-23T20:28:48.748633",
+    "total_solicitudes": 8
+  },
+  "solicitudes": [
+    {
+      "id_solicitud": "SOL_20250823_181223_001",
+      "fecha_creacion": "2025-08-23T18:12:23.936436",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "María García",
+          "correo": "maria.garcia@empresa.com"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Juan Pérez",
+          "correo": "juan.perez@empresa.com"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": "TICKET-12345",
+      "fecha_cierre": "2025-08-23T18:26:06.166182",
+      "observaciones": "Revertido para pruebas"
+    },
+    {
+      "id_solicitud": "SOL_20250823_184802_002",
+      "fecha_creacion": "2025-08-23T18:48:02.327302",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "nombre": "Juan Carlos",
+          "apellido": "González",
+          "codigo": "TEST",
+          "correo": "juan.gonzalez@test.com",
+          "rol": "Supervisor"
+        },
+        {
+          "nombre": "María Elena",
+          "apellido": "Rodríguez",
+          "codigo": "DEMO",
+          "correo": "maria.rodriguez@test.com",
+          "rol": "Administrador"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_192717_003",
+      "fecha_creacion": "2025-08-23T19:27:17.710198",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_192759_004",
+      "fecha_creacion": "2025-08-23T19:27:59.272475",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_193321_005",
+      "fecha_creacion": "2025-08-23T19:33:21.624164",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_193701_006",
+      "fecha_creacion": "2025-08-23T19:37:01.589667",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_195710_007",
+      "fecha_creacion": "2025-08-23T19:57:10.341980",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    },
+    {
+      "id_solicitud": "SOL_20250823_202848_008",
+      "fecha_creacion": "2025-08-23T20:28:48.745669",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "Daniela Fernanda Ortiz",
+          "correo": "daniela.ortiz@empresa.com",
+          "item_id": "I001"
+        },
+        {
+          "codigo": "QASD",
+          "autorizador": "Sebastián Eduardo Martín",
+          "correo": "sebastian.martin@corporacion.co",
+          "item_id": "I002"
+        },
+        {
+          "codigo": "SSSS",
+          "autorizador": "Ricardo Antonio Jiménez",
+          "correo": "ricardo.jimenez@global.org",
+          "item_id": "I003"
+        },
+        {
+          "codigo": "CASD",
+          "autorizador": "Isabella Camila Rojas",
+          "correo": "isabella.rojas@tech.net",
+          "item_id": "I004"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Paola Carolina Díaz",
+          "correo": "paola.diaz@solutions.com",
+          "item_id": "I005"
+        },
+        {
+          "codigo": "ATLA",
+          "autorizador": "Laura Cristina Torres",
+          "correo": "laura.torres@innovate.co",
+          "item_id": "I006"
+        },
+        {
+          "codigo": "FIEC",
+          "autorizador": "Fernando Gabriel Ruiz",
+          "correo": "fernando.ruiz@business.org",
+          "item_id": "I007"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    }
+  ]
+}

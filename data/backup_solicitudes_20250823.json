@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "ultima_actualizacion": "2025-08-23T18:48:02.328200",
+    "total_solicitudes": 2
+  },
+  "solicitudes": [
+    {
+      "id_solicitud": "SOL_20250823_181223_001",
+      "fecha_creacion": "2025-08-23T18:12:23.936436",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "codigo": "APF2",
+          "autorizador": "María García",
+          "correo": "maria.garcia@empresa.com"
+        },
+        {
+          "codigo": "FCVE",
+          "autorizador": "Juan Pérez",
+          "correo": "juan.perez@empresa.com"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": "TICKET-12345",
+      "fecha_cierre": "2025-08-23T18:26:06.166182",
+      "observaciones": "Revertido para pruebas"
+    },
+    {
+      "id_solicitud": "SOL_20250823_184802_002",
+      "fecha_creacion": "2025-08-23T18:48:02.327302",
+      "grupos_red": [
+        "APF2_QASD1_SSSS_CASD1_",
+        "FCVE2_ATLA_FIEC_CASD1_"
+      ],
+      "autorizadores": [
+        {
+          "nombre": "Juan Carlos",
+          "apellido": "González",
+          "codigo": "TEST",
+          "correo": "juan.gonzalez@test.com",
+          "rol": "Supervisor"
+        },
+        {
+          "nombre": "María Elena",
+          "apellido": "Rodríguez",
+          "codigo": "DEMO",
+          "correo": "maria.rodriguez@test.com",
+          "rol": "Administrador"
+        }
+      ],
+      "estado": "En solicitud de conformidades",
+      "ticket_helpdesk": null,
+      "fecha_cierre": null,
+      "observaciones": null
+    }
+  ]
+}
