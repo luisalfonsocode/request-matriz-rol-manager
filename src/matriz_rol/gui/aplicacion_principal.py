@@ -12,7 +12,7 @@ from tkinter import ttk, messagebox
 import customtkinter as ctk
 from .solicitud_matriz import SolicitudMatrizFrame
 from .autorizadores_editor import AutorizadoresEditorFrame
-from .gestion_solicitudes import GestionSolicitudesFrame
+from .gestion_solicitudes.gestion_solicitudes_frame import GestionSolicitudesFrame
 from ..data.gestor_solicitudes import GestorSolicitudes
 
 

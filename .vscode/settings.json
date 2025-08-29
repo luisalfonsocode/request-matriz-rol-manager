@@ -26,7 +26,7 @@
     ],
     // Auto-organización de importaciones
     "editor.codeActionsOnSave": {
-        "source.organizeImports": true
+        "source.organizeImports": "explicit"
     },
     // Configuración de verificación de tipos
     "python.analysis.typeCheckingMode": "strict",

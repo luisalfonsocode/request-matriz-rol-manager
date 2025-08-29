@@ -4,32 +4,67 @@ Este documento proporciona guías esenciales para agentes de IA trabajando en es
 
 ## Estructura del Proyecto
 
-El proyecto sigue una estructura moderna de Python:
+El proyecto sigue una estructura moderna y organizada de Python:
 
 ```
 utilitarios-matriz-de-rol/
-├── src/                    # Directorio de código fuente
+├── INSTALAR.bat            # 🎯 Instalador principal (punto de entrada)
+├── setup.py                # 📦 Configuración del paquete Python
+├── README.md               # 📖 Documentación principal
+├── LICENSE                 # ⚖️ Licencia MIT
+│
+├── src/                    # 🐍 Directorio de código fuente
 │   └── matriz_rol/        # Paquete principal
-├── tests/                 # Archivos de pruebas
-├── docs/                  # Documentación
-├── requirements/          # Archivos de requisitos
-│   ├── base.txt          # Dependencias base
-│   ├── dev.txt           # Dependencias de desarrollo
-│   └── test.txt          # Dependencias de pruebas
-└── scripts/              # Scripts de utilidad
+│
+├── setup/                  # 🛠️ Sistema de instalación automatizada
+│   ├── scripts/           # Scripts de configuración
+│   ├── docs/              # Documentación de instalación
+│   └── logs/              # Logs del sistema
+│
+├── config/                 # ⚙️ Configuraciones del proyecto
+│   ├── matrices.yaml      # Configuración de matrices
+│   └── tools/             # Configuraciones de herramientas
+│       ├── pyproject.toml # Black, isort, build
+│       ├── setup.cfg      # flake8, coverage
+│       └── mypy.ini       # Verificación de tipos
+│
+├── requirements/           # 📦 Archivos de requisitos por ambiente
+│   ├── base.txt           # Dependencias base
+│   ├── dev.txt            # Dependencias de desarrollo
+│   └── test.txt           # Dependencias de pruebas
+│
+├── scripts/                # 🔧 Scripts de utilidad
+│   ├── inicializar_bd_autorizadores.py
+│   └── otros scripts...
+│
+├── tests/                  # 🧪 Archivos de pruebas
+├── docs/                   # 📚 Documentación
+├── data/                   # 💾 Bases de datos
+└── output/                 # 📤 Archivos generados
 ```
 
 ## Entorno de Desarrollo
 
 ### Configuración
-1. Crear y activar un entorno virtual:
+1. Ejecutar instalación automatizada:
    ```bash
-   python -m venv venv
-   # Windows
-   .\venv\Scripts\activate
+   # Instalación rápida
+   INSTALAR.bat
+
+   # O manualmente
+   setup\scripts\instalador_rapido.bat
    ```
 
-2. Instalar dependencias de desarrollo:
+2. Para desarrollo:
+   ```bash
+   # Instalación completa para desarrolladores
+   setup\scripts\configurar_ambiente.bat
+
+   # O con PowerShell
+   setup\scripts\configurar_ambiente.ps1 -DevMode
+   ```
+
+3. Instalar dependencias específicas:
    ```bash
    pip install -r requirements/dev.txt
    ```

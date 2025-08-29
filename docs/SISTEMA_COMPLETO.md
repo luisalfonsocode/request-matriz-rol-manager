@@ -178,13 +178,19 @@ Ejemplos:
 
 ## 🚀 Ejecutar la Aplicación
 
-### Método 1: Script Principal
+### Método 1: Instalación Rápida
 ```bash
 cd utilitarios-matriz-de-rol
-python src/run.py
+INSTALAR.bat
 ```
 
-### Método 2: Script de Prueba
+### Método 2: Script Principal
+```bash
+cd utilitarios-matriz-de-rol
+python -m matriz_rol.gui.aplicacion_principal
+```
+
+### Método 3: Script de Prueba
 ```bash
 cd utilitarios-matriz-de-rol
 python scripts/probar_aplicacion_completa.py

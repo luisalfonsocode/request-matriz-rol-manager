@@ -3,6 +3,17 @@
 
 from setuptools import setup, find_packages
 
+
+def parse_requirements(filename):
+    """Lee dependencias desde archivo requirements."""
+    with open(filename, encoding="utf-8") as f:
+        return [
+            line.strip()
+            for line in f
+            if line.strip() and not line.startswith("#") and not line.startswith("-r")
+        ]
+
+
 with open("README.md", encoding="utf-8") as f:
     long_description = f.read()
 
@@ -18,24 +29,10 @@ setup(
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     python_requires=">=3.9",
-    install_requires=[
-        "PyYAML>=6.0.0",
-        "customtkinter>=5.2.0",
-        "click>=8.0.0",
-    ],
+    install_requires=parse_requirements("requirements/base.txt"),
     extras_require={
-        "dev": [
-            "black>=23.0.0",
-            "isort>=5.0.0",
-            "mypy>=1.0.0",
-            "pylint>=2.17.0",
-            "pre-commit>=3.0.0",
-        ],
-        "test": [
-            "pytest>=7.0.0",
-            "pytest-cov>=4.0.0",
-            "pytest-mock>=3.10.0",
-        ],
+        "dev": parse_requirements("requirements/dev.txt"),
+        "test": parse_requirements("requirements/test.txt"),
     },
     entry_points={
         "console_scripts": [

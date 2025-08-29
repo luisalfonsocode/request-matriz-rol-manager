@@ -1,0 +1,9 @@
+REPORTE DE VERIFICACIÓN DEL SISTEMA
+==================================================
+
+Fecha y hora: 2025-08-28 22:29:40
+Python: 3.13.7
+Plataforma: Windows-10-10.0.19045-SP0
+Directorio del proyecto: F:\ws\utilitarios-matriz-de-rol
+
+✅ SISTEMA LISTO PARA INSTALACIÓN
